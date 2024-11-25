@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: url('images/background.png') no-repeat;
+  background-position: center;
+}
+
+header nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+z-index: 1;
+}
+
+nav .navbar {
+  width: 90%;
+  margin: 20px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo{
+  height: 80px;
+  width: 150px;
+}
+.navbar .logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.navbar .menu{
+  display: flex;
+}
+.navbar .menu li{
+  list-style: none;
+  margin: 0 10px;
+
+}
+.navbar .menu li a{
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+.navbar .menu li a:hover{
+  color: #000;
+}
+.navbar  .search-box{
+  position: relative;
+  width: 250px;
+  height: 40px;
+}
+.navbar  .search-box input[type="text"]{
+  width: 100%;
+  height: 100%;
+  padding:0 10px 0 40px;
+  border-radius: 9px;
+  border: 2px solid #2c3e50;
+  color: #2c3e50;
+  font-size: 16px;
+}
+.search-box a{
+  position: absolute;
+  font-size: 25px;
+  color: #2c3e50;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.content{
+  z-index: 100;
+  position: absolute;
+  top: 33%;
+  left:7%;
+}
+.content .text{
+  font-size: 27px;
+  color: #2c3e50;
+}
+.content .name{
+  font-size: 75px;
+  color: #2c3e50;
+  margin: -20px 0 -0 0;
+}
+.content .job{
+  font-size: 40px;
+  color: #2c3e50;
+  display: flex;
+}
+.content .job .typing-text{
+  overflow: hidden;
+  white-space: nowrap;
+  color: #1de2d1;
+  margin-left: 10px;
+  animation: typing 5s steps(15) infinite ;
+  border-right: 4px solid #2c3e50;
+}
+@keyframes typing{
+  0%{
+    width: 0ch;
+  }
+  50%{
+    width: 15ch;
+  }
+  100%{
+    width:0ch;
+  }
+}
+.content .buttons{
+  margin: 20px 0 0 50px;
+}
+.content .buttons button{
+  font-size: 18px;
+  padding: 8px 6px;
+  margin: 0 10px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(135deg,#2afadf , #c346c2 );
+}
+.content .buttons button:hover{
+  transform: scale(0.95);
+}
+header .girl img{
+  right: 0px;
+  bottom: 0;
+  position:absolute;
+  height: 90%;
+  z-index: 0;
+}
+header .media-icons{
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+header .media-icons a{
+  color: #2c3e50;
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+header .media-icons a:hover{
+  opacity: 1;
+}
